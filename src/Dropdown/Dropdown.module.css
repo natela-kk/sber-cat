@@ -19,24 +19,42 @@
     font-weight: 300;
 }
 
-.arrowDown {
+.chevron {
     margin-right: 20px;
 }
 
-.optionsList {
+.options {
     position: absolute;
-    z-index: 1000;
+    z-index: 9999;
+    cursor: pointer;
     left: 0;
     top: 100%;
     width: 100%;
+    max-height: 171px;
+    overflow: auto;
     margin-top: 6px;
-    border: 1px solid #DAD6D6;
     background: #FFF;
-    cursor: pointer;
+    border: 1px solid #DAD6D6;
 }
 
-.optionsItem {
-    list-style: none;
+.option {
+    display: flex;
+    justify-content: space-between;
     padding: 10px 0 10px 15px;
     border: 1px solid #DAD6D6;
+}
+
+.option:hover {
+    font-weight: 400;
+}
+
+.selected {
+    background: #F0EFEF;
+}
+
+@media (max-width: 333px) {
+    .wrapper {
+        margin-left: calc((100% - 181px) / 2);
+        margin-right: calc((100% - 181px) / 2);
+    }
 }
