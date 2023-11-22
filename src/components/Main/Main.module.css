@@ -26,6 +26,14 @@
     max-width: 88px;
 }
 
+.img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 195px;
+    height: 336px;
+}
+
 @media (max-width: 333px) {
     .header {
         justify-content: center;
